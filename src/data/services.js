@@ -1,0 +1,71 @@
+import { Sparkles, Video, Users, TrendingUp, Megaphone, BarChart3, Palette, Globe } from 'lucide-react'
+
+export const services = [
+  {
+    id: 1,
+    icon: 'Users',
+    title: 'Creator Management',
+    subtitle: 'Full-Service Talent',
+    description: 'End-to-end creator management from sourcing to delivery. We handle contracts, briefs, revisions, and payments so you focus on strategy.',
+    features: ['Talent Sourcing & Vetting', 'Contract Negotiation', 'Campaign Coordination', 'Performance Tracking'],
+    stat: '2,500+',
+    statLabel: 'Managed Creators',
+  },
+  {
+    id: 2,
+    icon: 'Video',
+    title: 'UGC Production',
+    subtitle: 'Authentic Content at Scale',
+    description: 'Premium user-generated content that converts. Our creator network produces scroll-stopping UGC for paid and organic channels.',
+    features: ['Product Reviews', 'Unboxing Content', 'Testimonial Videos', 'Lifestyle Integration'],
+    stat: '15K+',
+    statLabel: 'Videos Produced',
+  },
+  {
+    id: 3,
+    icon: 'Sparkles',
+    title: 'Content Strategy',
+    subtitle: 'Data-Driven Creative',
+    description: 'Strategic content frameworks built on performance data. We craft narratives that resonate with your target audience and drive measurable results.',
+    features: ['Audience Research', 'Content Calendars', 'Platform Strategy', 'Trend Analysis'],
+    stat: '340%',
+    statLabel: 'Avg. Engagement Lift',
+  },
+  {
+    id: 4,
+    icon: 'TrendingUp',
+    title: 'Paid Amplification',
+    subtitle: 'Performance Marketing',
+    description: 'Turn creator content into high-performing paid assets. We optimize whitelisted ads across Meta, TikTok, and YouTube for maximum ROAS.',
+    features: ['Spark Ads & Whitelisting', 'A/B Creative Testing', 'Audience Targeting', 'ROAS Optimization'],
+    stat: '4.8x',
+    statLabel: 'Average ROAS',
+  },
+  {
+    id: 5,
+    icon: 'Megaphone',
+    title: 'Influencer Campaigns',
+    subtitle: 'End-to-End Execution',
+    description: 'From nano to mega influencers, we design and execute campaigns that build brand awareness and drive conversions at every funnel stage.',
+    features: ['Campaign Strategy', 'Influencer Matching', 'Content Approval', 'Reporting & Analytics'],
+    stat: '800+',
+    statLabel: 'Campaigns Launched',
+  },
+  {
+    id: 6,
+    icon: 'BarChart3',
+    title: 'Analytics & Reporting',
+    subtitle: 'Transparent Insights',
+    description: 'Real-time dashboards and comprehensive reporting that proves ROI. Every campaign comes with detailed performance analysis.',
+    features: ['Real-Time Dashboards', 'Attribution Modeling', 'Competitive Analysis', 'Monthly Reviews'],
+    stat: '99%',
+    statLabel: 'Client Retention',
+  },
+]
+
+export const serviceHighlights = [
+  { number: '2,500+', label: 'Vetted Creators' },
+  { number: '$50M+', label: 'Ad Spend Managed' },
+  { number: '15K+', label: 'Videos Delivered' },
+  { number: '340%', label: 'Avg. Engagement Lift' },
+]
