@@ -5,7 +5,7 @@ const footerLinks = {
   Company: [
     { name: 'About', path: '/about' },
     { name: 'Careers', path: '#' },
-    { name: 'Blog', path: '/blog' },
+    { name: 'Lab Stories', path: '/blog' },
     { name: 'Contact', path: '/contact' },
   ],
   Services: [
@@ -58,9 +58,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gold-500 flex items-center justify-center">
-                <span className="font-serif font-bold text-dark-900 text-lg">C</span>
-              </div>
+              <img src="/logo-icon.svg" alt="CreatorLabCo" className="w-10 h-10" />
               <span className="text-white font-semibold text-sm tracking-wider">
                 CREATOR<span className="text-gold-500">LAB</span>CO
               </span>

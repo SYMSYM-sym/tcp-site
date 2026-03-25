@@ -4,12 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { name: 'About', path: '/about' },
-  { name: 'Services', path: '/services' },
+  { name: 'Home', path: '/' },
   { name: 'Portfolio', path: '/portfolio' },
-  { name: 'Creators', path: '/creators' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Pricing', path: '/pricing' },
+  { name: 'Services', path: '/services' },
+  { name: 'Lab Stories', path: '/blog' },
+  { name: 'Contact', path: '/contact' },
 ]
 
 export default function Navbar() {
@@ -42,9 +41,7 @@ export default function Navbar() {
         <div className="container-custom flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-gold-500 flex items-center justify-center">
-              <span className="font-serif font-bold text-dark-900 text-lg">C</span>
-            </div>
+            <img src="/logo-icon.svg" alt="CreatorLabCo" className="w-10 h-10" />
             <div className="hidden sm:block">
               <span className="text-white font-semibold text-sm tracking-wider">
                 CREATOR<span className="text-gold-500">LAB</span>CO
@@ -75,7 +72,7 @@ export default function Navbar() {
               to="/contact"
               className="hidden lg:inline-flex items-center px-6 py-3 bg-gold-500 text-dark-900 text-sm font-semibold tracking-wider uppercase hover:bg-gold-400 transition-all duration-300"
             >
-              Contact Us
+              Start a Project
             </Link>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
@@ -126,7 +123,7 @@ export default function Navbar() {
                   to="/contact"
                   className="inline-flex items-center px-8 py-4 bg-gold-500 text-dark-900 text-sm font-semibold tracking-wider uppercase"
                 >
-                  Contact Us
+                  Start a Project
                 </Link>
               </motion.div>
             </div>

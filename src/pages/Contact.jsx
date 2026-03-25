@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { MapPin, Linkedin, Twitter, Instagram } from 'lucide-react'
+import { Linkedin, Twitter, Instagram } from 'lucide-react'
 import PageTransition from '../components/layout/PageTransition'
 import FadeIn from '../components/animations/FadeIn'
 import { StaggerContainer, StaggerItem } from '../components/animations/StaggerChildren'
@@ -233,44 +233,6 @@ export default function Contact() {
               <div className="lg:col-span-1">
                 <StaggerContainer>
 
-                  {/* Locations Card */}
-                  <StaggerItem>
-                    <Card hover={false}>
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-4">
-                          <div className="p-3 bg-gold-500/10 rounded-lg">
-                            <MapPin className="w-6 h-6 text-gold-500" />
-                          </div>
-                          <div className="flex-1">
-                            <h3 className="font-semibold text-white mb-1">
-                              New York
-                            </h3>
-                            <p className="text-white/60 text-sm">
-                              1234 Broadway<br />
-                              New York, NY 10001
-                            </p>
-                          </div>
-                        </div>
-                        <div className="border-t border-white/10 pt-4">
-                          <div className="flex items-start gap-4">
-                            <div className="p-3 bg-gold-500/10 rounded-lg">
-                              <MapPin className="w-6 h-6 text-gold-500" />
-                            </div>
-                            <div className="flex-1">
-                              <h3 className="font-semibold text-white mb-1">
-                                Los Angeles
-                              </h3>
-                              <p className="text-white/60 text-sm">
-                                5678 Sunset Blvd<br />
-                                Los Angeles, CA 90028
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Card>
-                  </StaggerItem>
-
                   {/* Social Links Card */}
                   <StaggerItem>
                     <Card hover={false}>
@@ -305,17 +267,6 @@ export default function Contact() {
                     </Card>
                   </StaggerItem>
 
-                  {/* Map Placeholder */}
-                  <StaggerItem>
-                    <Card hover={false} className="h-32 flex items-center justify-center bg-gradient-to-br from-dark-800 to-dark-700">
-                      <div className="text-center">
-                        <MapPin className="w-8 h-8 text-gold-500/40 mx-auto mb-2" />
-                        <p className="text-white/60 text-sm font-semibold">
-                          Visit Us
-                        </p>
-                      </div>
-                    </Card>
-                  </StaggerItem>
                 </StaggerContainer>
               </div>
             </div>

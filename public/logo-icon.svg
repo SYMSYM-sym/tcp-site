@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Diamond/shield shape -->
+  <path d="M32 4L56 28L32 60L8 28L32 4Z" stroke="#C9A84C" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+  <!-- Flask body -->
+  <path d="M26 20V30L18 42C17 44 18.5 46 21 46H43C45.5 46 47 44 46 42L38 30V20" stroke="#C9A84C" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Flask top rim -->
+  <line x1="23" y1="20" x2="41" y2="20" stroke="#C9A84C" stroke-width="3" stroke-linecap="round"/>
+  <!-- Liquid in flask -->
+  <path d="M21 42L26 34H38L43 42C44 44 42.5 46 41 46H23C21.5 46 20 44 21 42Z" fill="#C9A84C" opacity="0.3"/>
+  <!-- C letter overlay -->
+  <path d="M36 32C36 28 33 26 30 26C27 26 24 28 24 32C24 36 27 38 30 38C33 38 35 37 36 35" stroke="#C9A84C" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
