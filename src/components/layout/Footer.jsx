@@ -59,10 +59,10 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-gold-500 flex items-center justify-center">
-                <span className="font-serif font-bold text-dark-900 text-lg">T</span>
+                <span className="font-serif font-bold text-dark-900 text-lg">C</span>
               </div>
               <span className="text-white font-semibold text-sm tracking-wider">
-                THE<span className="text-gold-500">CREATOR</span>PROS
+                CREATOR<span className="text-gold-500">LAB</span>CO
               </span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed mb-6 max-w-xs">
@@ -107,7 +107,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8">
           <p className="text-white/30 text-xs">
-            © {new Date().getFullYear()} Your Agency. All rights reserved.
+            © {new Date().getFullYear()} CreatorLabCo. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-white/30 text-xs hover:text-white/60 transition-colors">Privacy Policy</a>

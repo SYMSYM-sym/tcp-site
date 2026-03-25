@@ -43,11 +43,11 @@ export default function Navbar() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-10 h-10 bg-gold-500 flex items-center justify-center">
-              <span className="font-serif font-bold text-dark-900 text-lg">T</span>
+              <span className="font-serif font-bold text-dark-900 text-lg">C</span>
             </div>
             <div className="hidden sm:block">
               <span className="text-white font-semibold text-sm tracking-wider">
-                THE<span className="text-gold-500">CREATOR</span>PROS
+                CREATOR<span className="text-gold-500">LAB</span>CO
               </span>
             </div>
           </Link>
