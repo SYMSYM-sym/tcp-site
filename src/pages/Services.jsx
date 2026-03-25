@@ -78,7 +78,7 @@ export default function Services() {
                 <StaggerItem key={index} className="text-center">
                   <div className="mb-4">
                     <p className="text-4xl md:text-5xl font-serif font-bold text-gold-500">
-                      <CountUp end={highlight.number} />
+                      <CountUp end={highlight.number} prefix={highlight.prefix || ''} suffix={highlight.suffix || ''} />
                     </p>
                   </div>
                   <p className="text-white/60 font-semibold tracking-wide text-sm md:text-base">
@@ -136,7 +136,7 @@ export default function Services() {
                       <div className="border-t border-white/5 pt-6 flex items-baseline justify-between">
                         <div>
                           <p className="text-3xl md:text-4xl font-serif font-bold text-gold-500 mb-1">
-                            <CountUp end={service.stat} suffix={service.stat.includes('%') ? '%' : '+'} />
+                            <CountUp end={service.statNum} prefix={service.statPrefix || ''} suffix={service.statSuffix || ''} />
                           </p>
                           <p className="text-white/40 text-xs uppercase tracking-widest">
                             {service.statLabel}

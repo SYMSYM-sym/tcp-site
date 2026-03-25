@@ -19,10 +19,10 @@ const platformIcons = {
 }
 
 const stats = [
-  { label: 'Creators', value: '2,500+' },
-  { label: 'Categories', value: '8' },
-  { label: 'Avg. Engagement', value: '7.2%' },
-  { label: 'Platforms', value: '3' },
+  { label: 'Creators', end: 2500, suffix: '+' },
+  { label: 'Categories', end: 8 },
+  { label: 'Avg. Engagement', end: 7.2, suffix: '%' },
+  { label: 'Platforms', end: 3 },
 ]
 
 export default function Creators() {
@@ -81,7 +81,7 @@ export default function Creators() {
                 <FadeIn key={idx} delay={idx * 0.1}>
                   <div className="text-center">
                     <div className="font-serif text-3xl md:text-4xl font-bold text-gold-500 mb-2">
-                      <CountUp end={parseInt(stat.value)} suffix={stat.value.replace(/[0-9]/g, '')} />
+                      <CountUp end={stat.end} prefix={stat.prefix || ''} suffix={stat.suffix || ''} />
                     </div>
                     <p className="text-white/60 text-sm">{stat.label}</p>
                   </div>

@@ -15,10 +15,10 @@ import { testimonials, clientLogos } from '../data/testimonials'
 
 // Hero Stats Data
 const heroStats = [
-  { number: '2,500+', label: 'Creators' },
-  { number: '$50M+', label: 'Ad Spend' },
-  { number: '15K+', label: 'Videos' },
-  { number: '340%', label: 'Avg. Lift' },
+  { end: 2500, suffix: '+', label: 'Creators' },
+  { end: 50, prefix: '$', suffix: 'M+', label: 'Ad Spend' },
+  { end: 15, suffix: 'K+', label: 'Videos' },
+  { end: 340, suffix: '%', label: 'Avg. Lift' },
 ]
 
 // Icon mapping
@@ -100,7 +100,7 @@ export default function Home() {
               {heroStats.map((stat, idx) => (
                 <div key={idx} className="text-center">
                   <div className="text-2xl md:text-3xl font-bold text-gold-500 mb-2">
-                    <CountUp end={stat.number.replace(/[^0-9]/g, '')} suffix={stat.number.match(/[^0-9]/g)?.join('') || ''} />
+                    <CountUp end={stat.end} prefix={stat.prefix || ''} suffix={stat.suffix || ''} />
                   </div>
                   <p className="text-xs md:text-sm text-white/50 uppercase tracking-widest">{stat.label}</p>
                 </div>
@@ -158,7 +158,7 @@ export default function Home() {
 
                       <div className="pt-6 border-t border-white/5">
                         <div className="text-3xl font-bold text-gold-500 mb-1">
-                          <CountUp end={service.stat.replace(/[^0-9.]/g, '')} suffix={service.stat.match(/[A-Za-z%+]/g)?.join('') || ''} />
+                          <CountUp end={service.statNum} prefix={service.statPrefix || ''} suffix={service.statSuffix || ''} />
                         </div>
                         <p className="text-xs text-white/40 uppercase tracking-widest">{service.statLabel}</p>
                       </div>
@@ -222,7 +222,7 @@ export default function Home() {
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <p className="text-gold-500 font-bold text-lg">
-                          <CountUp end={project.results.views.replace(/[^0-9.]/g, '')} suffix={project.results.views.match(/[A-Za-z]/g)?.join('') || ''} />
+                          <CountUp end={project.results.viewsNum} suffix={project.results.viewsSuffix || ''} />
                         </p>
                         <p className="text-xs text-white/40 uppercase tracking-widest">Views</p>
                       </div>

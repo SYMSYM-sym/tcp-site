@@ -9,6 +9,8 @@ export const services = [
     description: 'End-to-end creator management from sourcing to delivery. We handle contracts, briefs, revisions, and payments so you focus on strategy.',
     features: ['Talent Sourcing & Vetting', 'Contract Negotiation', 'Campaign Coordination', 'Performance Tracking'],
     stat: '2,500+',
+    statNum: 2500,
+    statSuffix: '+',
     statLabel: 'Managed Creators',
   },
   {
@@ -19,6 +21,8 @@ export const services = [
     description: 'Premium user-generated content that converts. Our creator network produces scroll-stopping UGC for paid and organic channels.',
     features: ['Product Reviews', 'Unboxing Content', 'Testimonial Videos', 'Lifestyle Integration'],
     stat: '15K+',
+    statNum: 15,
+    statSuffix: 'K+',
     statLabel: 'Videos Produced',
   },
   {
@@ -29,6 +33,8 @@ export const services = [
     description: 'Strategic content frameworks built on performance data. We craft narratives that resonate with your target audience and drive measurable results.',
     features: ['Audience Research', 'Content Calendars', 'Platform Strategy', 'Trend Analysis'],
     stat: '340%',
+    statNum: 340,
+    statSuffix: '%',
     statLabel: 'Avg. Engagement Lift',
   },
   {
@@ -39,6 +45,8 @@ export const services = [
     description: 'Turn creator content into high-performing paid assets. We optimize whitelisted ads across Meta, TikTok, and YouTube for maximum ROAS.',
     features: ['Spark Ads & Whitelisting', 'A/B Creative Testing', 'Audience Targeting', 'ROAS Optimization'],
     stat: '4.8x',
+    statNum: 4.8,
+    statSuffix: 'x',
     statLabel: 'Average ROAS',
   },
   {
@@ -49,6 +57,8 @@ export const services = [
     description: 'From nano to mega influencers, we design and execute campaigns that build brand awareness and drive conversions at every funnel stage.',
     features: ['Campaign Strategy', 'Influencer Matching', 'Content Approval', 'Reporting & Analytics'],
     stat: '800+',
+    statNum: 800,
+    statSuffix: '+',
     statLabel: 'Campaigns Launched',
   },
   {
@@ -59,13 +69,15 @@ export const services = [
     description: 'Real-time dashboards and comprehensive reporting that proves ROI. Every campaign comes with detailed performance analysis.',
     features: ['Real-Time Dashboards', 'Attribution Modeling', 'Competitive Analysis', 'Monthly Reviews'],
     stat: '99%',
+    statNum: 99,
+    statSuffix: '%',
     statLabel: 'Client Retention',
   },
 ]
 
 export const serviceHighlights = [
-  { number: '2,500+', label: 'Vetted Creators' },
-  { number: '$50M+', label: 'Ad Spend Managed' },
-  { number: '15K+', label: 'Videos Delivered' },
-  { number: '340%', label: 'Avg. Engagement Lift' },
+  { number: 2500, suffix: '+', label: 'Vetted Creators' },
+  { number: 50, prefix: '$', suffix: 'M+', label: 'Ad Spend Managed' },
+  { number: 15, suffix: 'K+', label: 'Videos Delivered' },
+  { number: 340, suffix: '%', label: 'Avg. Engagement Lift' },
 ]
